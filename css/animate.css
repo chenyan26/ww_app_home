@@ -1,0 +1,86 @@
+/*banner*/
+
+@keyframes mybanner{
+	from{opacity: .3;}
+	to{opacity: 1;}
+
+}
+
+@-webkit-keyframes mybanner{
+	from{opacity: .3;}
+	to{opacity: 1;}
+
+}
+
+/*banner下手机*/
+
+@keyframes phone{
+	0%{left: -2000px;opacity: 0;}
+	60%{left:-60px;opacity: 1;}
+	80%{left:-100px;}
+	100%{left:-90px;}
+}
+
+@-webkit-keyframes phone{
+	0%{left: -2000px;opacity: 0;}
+	60%{left:-60px;opacity: 1;}
+	80%{left:-100px;}
+	100%{left:-90px;}
+}
+
+/*banner下二维码*/
+@keyframes bandown{
+	from{left: 80%;}
+	to{left:50%;}
+}
+
+@-webkit-keyframes bandown{
+	from{left: 80%;}
+	to{left:50%;}
+}
+
+/*内容左右进入*/
+
+@keyframes conLeft{
+	from{left: -100px;opacity: 0;}
+	to{left:0;opacity: 1;}
+}
+
+@-webkit-keyframes conLeft{
+	from{left: -100px;opacity: 0;}
+	to{left:0;opacity: 1;}
+}
+
+@keyframes conRight{
+	from{right: -100px;opacity: 0;}
+	to{right:0;opacity: 1;}
+}
+
+@-webkit-keyframes conRight{
+	from{right: -100px;}
+	to{right:0;opacity: 1;}
+}
+
+@keyframes conLong{
+	from{left: 90%;opacity: 0;}
+	to{left: 50%;opacity: 1;}
+}
+
+@-webkit-keyframes conLong{
+	from{left: 90%;opacity: 0;}
+	to{left: 50%;opacity: 1;}
+}
+
+@keyframes conTop{
+	0%{bottom: -2000px;opacity: 0;}
+	60%{bottom:10px;opacity: 1;}
+	80%{bottom:0px;}
+	100%{bottom:10px;}
+}
+
+@-webkit-keyframes conTop{
+	0%{bottom: -2000px;opacity: 0;}
+	60%{bottom:10px;opacity: 1;}
+	80%{bottom:0px;}
+	100%{bottom:10px;}
+}

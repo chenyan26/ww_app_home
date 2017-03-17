@@ -1,0 +1,139 @@
+*{padding: 0;margin: 0;font-family: Microsoft Yahei;}
+body{font-size: 14px;color: #777;background-color: #e9f1fc;}
+img{border: 0;}
+a{text-decoration: none;color: #666;}
+a:hover{text-decoration: none; color: #f90;}
+li{list-style: none;}
+
+.clear{width: 0;height: 0;padding: 0;width: 0;clear: both;}
+.content{width: 980px;margin: 0 auto;position: relative;}
+
+.fl{float: left;}
+.fr{float: right;}
+
+.relative{position: relative;}
+
+/*top*/
+.top{
+	height: 64px;
+	background-color: #fff;
+}
+
+.top .logo{
+	padding-top: 13px;
+}
+
+/*导航*/
+.menu{
+	padding-top: 19px;
+}
+
+.menu a{
+	display: inline-block;
+}
+
+.menu a:hover{
+	color: #666;
+}
+
+.menu li{
+	float: left;
+	font-size: 16px;
+	margin-left: 50px;
+	position: relative;
+	height: 35px;
+}
+
+.menu li.menu_open{
+	color: #f90;
+}
+
+.menu li span,
+.menu li::after{
+	display: block;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu li::after{
+	content: attr(data-text);
+	opacity: 0;
+	color: #f90;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-transform: translate3d(0, 25px, 0);
+	transform: translate3d(0, 25px, 0);
+}
+
+.menu li:hover span{
+	opacity: 0;
+	-webkit-transform: translate3d(0, -25px, 0);
+	transform: translate3d(0, -25px, 0);
+}
+
+.menu li:hover::after {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.menu li i,
+.menu li.menu_open i{
+	position: absolute;
+	background-color: #f90;
+	height: 2px;
+	left: -5%;
+	width: 110%;
+	bottom: 0px;
+	display: block\9;
+}
+
+.menu li i{
+	display: none\9;
+	opacity: 0;
+	-webkit-transform: scale3d(0.2, 1, 1);
+	transform: scale3d(0.2, 1, 1);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+	
+}
+
+.menu li:hover i,
+.menu li.menu_open i{
+	opacity: 1;
+	display: block\9;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.menu li:hover span{
+	color: #f90\9;
+}
+
+/*foot*/
+.foot{
+	background-color: #28282e;
+	padding: 44px 0;
+	text-align: center;
+}
+
+.foot p{
+	padding-top: 5px;
+}
+
+.ewm_box{
+	width: 142px;
+	color: #ababac;
+	display: inline-block;
+	padding: 0 65px 20px 65px;
+}
+
+.ewm_box img{
+	width: 100%;
+	height: auto;
+	padding-bottom: 7px;
+}
